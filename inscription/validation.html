@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription</title>
+    <script src="validation.js"></script>
+</head>
+<body>
+<h2>Formulaire d'inscription</h2>
+<form action="inscription.php" method="POST">
+    <label for="nom">Nom :</label><br>
+    <input type="text" id="nom" name="nom" required><br><br>
+    <label for="prenom">Prénom :</label><br>
+    <input type="text" id="prenom" name="prenom" required><br><br>
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="password">Mot de passe :</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="date">Date de naissance :</label><br>
+    <input type="date" id="date" name="date"><br><br>
+    <label>Sexe :</label><br>
+    <input type="radio" name="genre" value="Homme"> Homme
+    <input type="radio" name="genre" value="Femme"> Femme<br><br>
+    <label>Ville :</label><br>
+    <select name="ville">
+        <option value="">Choisir une ville</option>
+        <option value="Marrakech">Ouarzazat</option>
+        <option value="Casablanca">Casablanca</option>
+        <option value="Rabat">Rabat</option>
+    </select><br><br>
+    <label>
+    <input type="checkbox" name="conditions">
+    J'accepte les conditions d'utilisation
+    </label><br><br>
+    <button type="submit">S'inscrire</button>
+    <button type="reset">Annuler</button>
+</form>
+</body>
+</html>
